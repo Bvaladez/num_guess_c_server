@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+	
+		<h1 id="heading">Guessing Game</h1>
+		<hr class="solid">
+		
+		<h2 id="feedback-heading">Feedback: <text id="feedback-response"> </text></h2>
+		
+		<hr class="dotted">
+
+		<!--Buttons to select guessin range-->
+		<div id="button-options-div">
+			<button class="option-button" id="ten-number-button">10</button>
+			<button class="option-button" id="fifty-number-button">50</button>
+			<button class="option-button" id="oneHundred-number-button">100</button>
+		</div>
+
+		<h3>Guess a number between: <h3 id="number-range">1 and 10.</h3></h3>
+
+		<div id="guess-input-div">
+			<input type="text" id="guess-input-field" name="type your guess here">
+			<button id="check-guess-button">Check Answer</button>
+			<button id="motivation-button">Motivation</button>
+			<h4>Your Guess: <text id="most-recent-guess"></text></h4>		
+		</div>
+
+		<div id="past-guesses-div">
+			<h2 style="text-align: left; float: left">Past Guesses</h2>
+			<h2 style="text-align: right; float: right; margin-right: 25px;">"Motivation"</h2>
+			<!-- <hr style="clear:both;"/> -->
+			<hr class="solid" style="clear: both;">
+			<hr class="solid" style="clear: both;">
+			<text id="motivational-text" style="float: right;font-size: x-large;color: lightsalmon; margin-right: 25px;"></text>
+			<ul class="basic" id="list-past-guesses" style="clear: both;">
+			</ul>
+		</div>
+		
+		<script type="text/javascript" src="app.js"></script>
+	</body>
+</html>
